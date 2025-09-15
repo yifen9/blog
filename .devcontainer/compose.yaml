@@ -1,0 +1,13 @@
+services:
+  blog:
+    image: julia:latest
+    container_name: blog
+    working_dir: /workspace
+    ports:
+      - "8080:8080"
+    volumes:
+      - "..:/workspace"
+    command: >
+      bash -lc "
+        
+      "
