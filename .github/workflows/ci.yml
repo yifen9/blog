@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - uses: actions/setup-python@main
-      - uses: julia-actions/setup-julia@main
+      - uses: julia-actions/setup-julia@master
       - run: julia -e '
           using Pkg;
           Pkg.activate(".");
