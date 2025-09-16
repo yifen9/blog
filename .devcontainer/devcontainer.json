@@ -1,13 +1,15 @@
 {
-	"dockerComposeFile": "compose.yaml",
-	"service": "blog",
-	"workspaceFolder": "/workspace",
-	"shutdownAction": "stopCompose",
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"julialang.language-julia"
-			]
-		}
-	}
+  "dockerComposeFile": "compose.yaml",
+  "service": "blog",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+          "julialang.language-julia",
+          "tamasfe.even-better-toml",
+          "yzhang.markdown-all-in-one"
+      ]
+    }
+  }
 }

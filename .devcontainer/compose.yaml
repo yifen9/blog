@@ -3,11 +3,21 @@ services:
     image: julia:latest
     container_name: blog
     working_dir: /workspace
-    ports:
-      - "8080:8080"
     volumes:
       - "..:/workspace"
-    command: >
-      bash -lc "
-        
-      "
+    ports:
+      - "8080:8000"
+    command:
+      - bash
+      - -c
+      - >
+        apt-get update;
+        apt-get install -y ca-certificates git make;
+
+        julia -e '
+          import Pkg;
+          Pkg.activate(".");
+          Pkg.instantiate();
+          Pkg.precompile()';
+          
+        exec sleep infinity
