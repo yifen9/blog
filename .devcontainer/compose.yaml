@@ -17,7 +17,6 @@ services:
         julia -e '
           import Pkg;
           Pkg.activate(".");
-          Pkg.instantiate();
-          Pkg.precompile()';
+          Pkg.instantiate()';
           
         exec sleep infinity
