@@ -9,7 +9,7 @@ dev: setup
 	@echo "env ready"
 
 serve:
-	julia --project=@. -e 'using Franklin; serve()'
+	julia --project=@. -e 'using Franklin; serve(host="0.0.0.0")'
 
 build:
 	julia --project=@. -e 'using Franklin; serve(single=true)'

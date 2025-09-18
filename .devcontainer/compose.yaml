@@ -1,22 +1,16 @@
 services:
   blog:
-    image: julia:latest
+    build:
+      context: ..
+      dockerfile: ../Dockerfile
     container_name: blog
     working_dir: /workspace
     volumes:
       - "..:/workspace"
+      - "julia-depot:/root/.julia"
     ports:
       - "8080:8000"
-    command:
-      - bash
-      - -c
-      - >
-        apt-get update;
-        apt-get install -y ca-certificates git make;
+    command: bash -lc "sleep infinity"
 
-        julia -e '
-          import Pkg;
-          Pkg.activate(".");
-          Pkg.instantiate()';
-          
-        exec sleep infinity
+volumes:
+  julia-depot:
