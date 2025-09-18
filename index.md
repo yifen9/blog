@@ -1,6 +1,6 @@
 # Home
 
-## Init
+## Usage Examples
 
 * [index](../posts/index)
 * [menu1](../posts/menu1)
