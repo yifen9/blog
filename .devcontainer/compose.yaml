@@ -2,7 +2,7 @@ services:
   blog:
     build:
       context: ..
-      dockerfile: ../Dockerfile
+      dockerfile: Dockerfile
     container_name: blog
     working_dir: /workspace
     volumes:
