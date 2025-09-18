@@ -20,7 +20,7 @@ ignore = [
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 generate_rss = true
-website_title = "Li Yifeng's Blog"
+website_title = "blog.yifen9.li"
 website_descr = "Li Yifeng's Blog"
 website_url   = "https://blog.yifen9.li/"
 +++
